@@ -10,12 +10,16 @@
 
 header{
     background-color: transparent;
+    position: absolute;
+    width: 100%;
+}
+
+.header_container{
     max-width: 1185px;
     margin: 16px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
 }
 
 header a{
