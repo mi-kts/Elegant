@@ -1,0 +1,64 @@
+@media only screen and (max-width: 767px) {
+
+    header {
+        background-color: rgba(101, 109, 113, 0.7);
+    }
+
+    .start {
+        background-image: url('../images/mobile_header_background.jpg');
+        text-align: center;
+    }
+
+    .examples img {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .people .d-flex{
+        flex-wrap: wrap;
+    }
+
+    .person{
+        max-width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .last_post .d-flex{
+        flex-wrap: wrap;
+    }
+
+    .last_post img{
+        width: 100%;
+    }
+
+    .last_post .post{
+        width: 100%;
+    }
+
+    .last_post .post a{
+        margin-bottom: 83px;
+    }
+
+    .map{
+        max-width: 600px;
+        height: 300px;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer-container p:first-child{
+    margin: 76px 0 0;
+    }
+
+    .contact{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .footer-container{
+
+    }
+}
