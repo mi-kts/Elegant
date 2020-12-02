@@ -8,14 +8,18 @@
 
     <title>Document</title>
 
-    <link rel="stylesheet" href="css/style.css">
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap"
           rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/b7b8f8e213.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+
 
 </head>
 <body>
@@ -50,7 +54,7 @@
 
 <div class="works">
     <div class="container">
-        <h3>what we do</h3>
+        <h3>what we do<i class="fas fa-chevron-left"></i></h3>
         <h2>Show Your Amazing Work</h2>
     </div>
 
@@ -75,7 +79,31 @@
             demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui
             sequitur mutationem consuetudium lectorum.</p>
 
-        <div class="d-flex">
+        <div class="owl-carousel">
+            <div class="person">
+                <div class="person_container"><img src="images/person_1.jpg" alt="human1"></div>
+                <h3>ceo</h3>
+                <h2>Tobias Schneider</h2>
+                <p>Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore.</p>
+            </div>
+
+            <div class="person">
+                <div class="person_container"><img src="images/person_2.jpg" alt="human2"></div>
+                <h3>designer</h3>
+                <h2>Jack Knife</h2>
+                <p>Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore.</p>
+            </div>
+
+            <div class="person">
+                <div class="person_container"><img src="images/person_3.jpg" alt="human3"></div>
+                <h3>developer</h3>
+                <h2>Ricki Hall</h2>
+                <p>Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore.</p>
+                </div>
+
             <div class="person">
                 <div class="person_container"><img src="images/person_1.jpg" alt="human1"></div>
                 <h3>ceo</h3>
@@ -100,6 +128,7 @@
                     laoreet dolore.</p>
             </div>
         </div>
+
 
     </div>
 </div>
@@ -174,5 +203,9 @@
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script src="js/owl.carousel.js"></script>
+
+<script src="js/scripts.js"></script>
 </body>
 </html>

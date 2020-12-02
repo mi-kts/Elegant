@@ -58,7 +58,12 @@
         margin-bottom: 5px;
     }
 
-    .footer-container{
-
+    .contact_us .d-flex{
+        flex-wrap: wrap;
     }
+
+    footer{
+        text-align: center;
+    }
+
 }
