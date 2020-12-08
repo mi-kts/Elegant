@@ -25,26 +25,6 @@
     <link rel="stylesheet" href="css/media-queries.css">
     <script src="js/scripts.js"></script>
 
-    <script>
-        $( function() {
-            $( "#dialog" ).dialog({
-                autoOpen: false,
-                show: {
-                    effect: "blind",
-                    duration: 1000
-                },
-                hide: {
-                    effect: "blind",
-                    duration: 1000
-                }
-            });
-
-            $( "#opener" ).on( "click", function() {
-                $( "#dialog" ).dialog( "open" );
-            });
-        } );
-    </script>
-
 </head>
 <body>
 
@@ -71,16 +51,19 @@
             claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo
             typi, qui nunc, fiant sollemnes in futurum.</p>
 
-       <div id="dialog" title="Basic dialog">
-           <form>
-               <h4>forgot your password?</h4>
-               <label>Enter your email</label>
-               <input type="email">
-               <button>reset password</button>
-               <p>or</p>
-               <a href="#">log in using facebook</a>
-           </form>
-    </div>
+        <div id="dialog" title="Basic dialog">
+            <form>
+                <div class="dialog_form">
+                    <label>Enter your<br>email</label>
+                    <input type="email">
+                </div>
+                <div class="form_container">
+                    <button>reset password</button>
+                    <p>or</p>
+                    <a href="#">log in using facebook</a>
+                </div>
+            </form>
+        </div>
 
         <button id="opener">Read More About Us</button>
 
@@ -137,7 +120,7 @@
                 <h2>Ricki Hall</h2>
                 <p>Lorem ipsum dolor sit amet, conse tetuer adi piscing elit, sed diam nonummy nibh euismod tincidunt ut
                     laoreet dolore.</p>
-                </div>
+            </div>
 
             <div class="person">
                 <div class="person_container"><img src="images/person_1.jpg" alt="human1"></div>
@@ -240,6 +223,26 @@
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+    $(function () {
+        $("#dialog").dialog({
+            autoOpen: false,
+            show: {
+                effect: "fade",
+                duration: 500
+            },
+            hide: {
+                effect: "fade",
+                duration: 500
+            }
+        });
+
+        $("#opener").on("click", function () {
+            $("#dialog").dialog("open");
+        });
+    });
+</script>
 
 <script src="js/owl.carousel.js"></script>
 

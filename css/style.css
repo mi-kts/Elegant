@@ -340,10 +340,91 @@ footer p {
     background-color: darkgrey;
 }
 
-#dialog{
+#dialog {
     text-transform: uppercase;
 }
 
-#dialog button{
+#dialog button {
     text-transform: uppercase;
+}
+
+.ui-dialog {
+    max-width: 750px !important;
+    width: 100% !important;
+}
+
+.ui-dialog-content form {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.form_container{
+    max-width: 530px;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.ui-dialog{
+    background-color: #fbfbfb !important;
+    border: none !important;
+}
+
+.ui-dialog-content form button {
+    display: block;
+    max-width: 530px;
+    margin: 40px auto 0;
+    background-color: #bdbdbd;
+    color: #000000;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 20px 15px;
+}
+
+.ui-dialog-content form p {
+    margin: 30px 0;
+}
+
+.ui-dialog-content form a{
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 20px 15px;
+    background-color: #4966a5;
+    text-decoration: none;
+}
+
+.ui-dialog-titlebar {
+    background-color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.dialog_form {
+    max-width: 570px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dialog_form title {
+    max-width: 140px;
+    display: block;
+}
+
+.dialog_form input {
+    width: 385px;
+    height: 60px;
+    display: block;
+    background-color: white;
+    border: solid 1px #b7b7b7;
+}
+
+.ui-widget .ui-button-icon-only .ui-dialog-titlebar-close {
+    position: absolute !important;
+    top: 50px !important;
+    right: 100px !important;
 }
