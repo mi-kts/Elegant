@@ -94,16 +94,6 @@ p {
     line-height: 18px;
 }
 
-/*.about_yourself a {*/
-/*    text-decoration: none;*/
-/*    padding: 23px 50px;*/
-/*    border: solid #000000 1px;*/
-/*    font-size: 14px;*/
-/*    color: #021725;*/
-/*    font-family: 'Open Sans', sans-serif;*/
-/*    font-weight: 300;*/
-/*}*/
-
 .works .examples {
     display: flex;
     flex-wrap: wrap;
@@ -358,13 +348,13 @@ footer p {
     margin-top: 40px;
 }
 
-.form_container{
+.form_container {
     max-width: 530px;
     margin: auto;
     padding-bottom: 50px;
 }
 
-.ui-dialog{
+.ui-dialog {
     background-color: #fbfbfb !important;
     border: none !important;
 }
@@ -385,7 +375,7 @@ footer p {
     margin: 30px 0;
 }
 
-.ui-dialog-content form a{
+.ui-dialog-content form a {
     display: block;
     width: 100%;
     color: white;
@@ -427,4 +417,9 @@ footer p {
     position: absolute !important;
     top: 50px !important;
     right: 100px !important;
+}
+
+.ui-dialog-title {
+    color: white;
+    padding: 40px 15px;
 }
