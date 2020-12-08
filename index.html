@@ -14,12 +14,36 @@
 
     <script src="https://kit.fontawesome.com/b7b8f8e213.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/media-queries.css">
+
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://resources/demos/style.css">
+
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
     <script src="js/scripts.js"></script>
 
+    <script>
+        $( function() {
+            $( "#dialog" ).dialog({
+                autoOpen: false,
+                show: {
+                    effect: "blind",
+                    duration: 1000
+                },
+                hide: {
+                    effect: "blind",
+                    duration: 1000
+                }
+            });
+
+            $( "#opener" ).on( "click", function() {
+                $( "#dialog" ).dialog( "open" );
+            });
+        } );
+    </script>
 
 </head>
 <body>
@@ -47,14 +71,25 @@
             claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo
             typi, qui nunc, fiant sollemnes in futurum.</p>
 
-        <a href="#">Read More About Us</a>
+       <div id="dialog" title="Basic dialog">
+           <form>
+               <h4>forgot your password?</h4>
+               <label>Enter your email</label>
+               <input type="email">
+               <button>reset password</button>
+               <p>or</p>
+               <a href="#">log in using facebook</a>
+           </form>
+    </div>
+
+        <button id="opener">Read More About Us</button>
 
     </div>
 </div>
 
 <div class="works">
     <div class="container">
-        <h3>what we do<i class="fas fa-chevron-left"></i></h3>
+        <h3>what we do</h3>
         <h2>Show Your Amazing Work</h2>
     </div>
 
@@ -203,6 +238,8 @@
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 <script src="js/owl.carousel.js"></script>
 
